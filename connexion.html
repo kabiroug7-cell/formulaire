@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CONNEXION UCAD</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    section {
+      width: 50%;
+      border: 1px solid;
+      margin-left: 25%;
+      border-radius: 4px;
+    }
+
+    h4 {
+      text-align: center;
+      padding: 20px;
+      background-color: lightgray;
+    }
+
+    #infos {
+      padding: 15px;
+      background-color: rgb(176, 228, 245);
+      color: rgb(37, 70, 121);
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .input-box .icon {
+      background-color: #f0f0f0; /* fond différent pour l’icône */
+      padding: 10px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .input-box input {
+       flex: 1; /* prend toute la largeur restante */
+      border: none;
+      padding: 10px;
+      outline: none;
+    }
+
+    .input-box input:focus {
+       border: none;
+      outline: none;
+      box-shadow: inset 0 0 3px rgba(36, 146, 236, 0.8);
+    }
+
+    .btn {
+      text-align: right;
+      margin: 20px;
+
+    }
+
+    .btn button {
+      padding: 8px 16px;
+      background-color: rgb(103, 176, 235);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .liens {
+      background-color: #f4f4f4;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .mp {
+      background-color: rgb(247, 187, 78);
+      border: none;
+      padding: 6px 12px;
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .verif {
+      background-color: rgb(70, 70, 247);
+      border: none;
+      padding: 6px 12px;
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 6px 12px;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: rgb(78, 190, 78);
+      border: 1px solid rgb(78, 190, 78);
+      margin: 5px;
+    }
+
+    a:hover {
+      background-color: rgb(68, 170, 68);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h4>Espace étudiants</h4>
+    <div id="infos">
+      Veuillez renseigner le nom d'utilisateur et le mot de passe
+    </div>
+    <form>
+      <div class="input-box">
+        <span class="icon"><i class="fa fa-user"></i></span>
+        <input type="text" name="nom" placeholder="Nom d'utilisateur" />
+      </div>
+      <div class="input-box">
+        <span class="icon"><i class="fa fa-lock"></i></span>
+        <input type="password" name="mp" placeholder="Mot de passe" />
+      </div>
+      <div class="btn">
+        <button>Se connecter</button>
+      </div>
+    </form>
+    <div class="liens">
+      <button class="mp">Mot de passe oublié ?</button>
+      <button class="verif">Vérifier autorisation ?</button>
+      <a href="compte.html">Créer un compte</a>
+    </div>
+  </section>
+</body>
+</html>

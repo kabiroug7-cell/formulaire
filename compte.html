@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Création de votre compte d'accès</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#e9eef3;
+}
+
+/* Bloc principal */
+.container{
+    width:650px;
+    margin:40px auto;
+    background:white;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Titre */
+.header{
+    background:#dedede;
+    padding:15px;
+    text-align:center;
+    border-radius:8px 8px 0 0;
+}
+
+/* Info */
+.info{
+    color:#b30000;
+    padding:10px 20px;
+    font-size:14px;
+}
+
+/* Lignes formulaire */
+.form-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+}
+
+/* Alternance des fonds */
+.white{ background:white; }
+.grey{ background:#f2f2f2; }
+
+/* Label */
+label{
+    width:40%;
+    font-weight:bold;
+    color:#444;
+}
+
+/* Champs */
+input, select{
+    width:55%;
+    padding:9px;
+    border:1px solid #bbb;
+    border-radius:5px;
+}
+
+/* Boutons généraux */
+.btn{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.btn-red{
+    background:#e24a42;
+}
+
+.btn-blue{
+    background:#46b2d6;
+    padding:10px 25px; /* même taille que les autres boutons */
+    border-radius:6px;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+}
+
+/* Zone boutons fin */
+.buttons{
+    text-align:center;
+    padding:15px;
+}
+
+/* CAPTCHA bloc interne */
+.captcha-block{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Code texte */
+.captcha-img{
+    font-size:22px;
+    font-weight:bold;
+    font-family: 'courier new', monoscape;
+    letter-spacing:5px;
+    color: #222;
+    text-shadow: 1px 1px 0 #999;
+}
+
+.captcha-row {
+    display: flex;
+    justify-content: space-between; /* bouton à gauche, code à droite */
+    align-items: center;
+    padding: 12px 20px; /* comme les autres form-row */
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Création de votre compte d'accès</h2>
+</div>
+
+<p class="info">
+• Tous les champs sont obligatoires<br>
+• Le mot de passe doit contenir 8 caractères minimum avec un mélange de chiffres et de lettres.
+</p>
+
+<form>
+
+<div class="form-row white">
+<label>Type d'identifiant :</label>
+<select>
+<option>Sélectionnez le type d'identifiant</option>
+</select>
+</div>
+
+<div class="form-row grey">
+<label>Votre Identifiant :</label>
+<input type="text" placeholder="Votre identifiant">
+</div>
+
+<div class="form-row white">
+<label>Nom :</label>
+<input type="text" placeholder="Nom de famille">
+</div>
+
+<div class="form-row grey">
+<label>Prénoms :</label>
+<input type="text" placeholder="Prénoms">
+</div>
+
+<div class="form-row white">
+<label>Mot de passe :</label>
+<input type="password" placeholder="Créer un mot de passe">
+</div>
+
+<div class="form-row grey">
+<label>Confirmation du mot de passe :</label>
+<input type="password" placeholder="Confirmer le mot de passe">
+</div>
+
+<div class="form-row white">
+<label>E-mail personnel :</label>
+<input type="email" placeholder="E-mail personnel">
+</div>
+
+<!-- ===== CAPTCHA ===== -->
+
+<div class="form-row grey">
+    <label>Captcha :</label>
+    <input type="text" placeholder="Saisissez les caractères ci-dessous">
+</div>
+
+<div class="form-row captcha-row">
+    <button type="button" class="btn btn-blue">Régénérer</button>
+    <div class="captcha-img">X G G W</div>
+</div>
+
+<!-- ===== BOUTONS ===== -->
+
+<div class="buttons">
+<button class="btn" type="submit">Valider</button>
+<button class="btn btn-red" type="reset">Annuler</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
